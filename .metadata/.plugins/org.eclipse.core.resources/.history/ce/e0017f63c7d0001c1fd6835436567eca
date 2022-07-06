@@ -1,0 +1,29 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+/*Problema exemplo:
+ * => Uma operadora de telefonia cobra $50.00 por um plano básico que
+ * dá direito a 100 minutos de ligação. Cada minuto que execeder a
+ * franquia, cobrar uma tarifa de $2.00. Elaborar um programa para ler
+ * a quantidade de minutos que uma pessoa consumir e mostrar o valor a
+ * ser pago.*/
+
+public class CumulativeAssignmentOperators {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double basicPlan = 50.00;
+		int minutes = sc.nextInt();
+		
+		if (minutes > 100) {
+			basicPlan += (minutes - 100) * 2.0;
+		}
+		
+		System.out.printf("Account amount to be paid: $ %.2f%n", basicPlan);
+		
+		sc.close();
+	}
+
+}
