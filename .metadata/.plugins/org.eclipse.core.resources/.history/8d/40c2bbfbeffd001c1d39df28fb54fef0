@@ -23,13 +23,13 @@ public class Program {
 		System.out.printf("FINAL GRADE = %.2f%n", student.finalGrade());
 		
 		if (student.finalGrade() < 60) {
+			System.out.printf("FINAL GRADE = %.2f%n", student.finalGrade());
 			System.out.println("FAILED");
-			System.out.printf("MISSING %.2f POINTS", student.missingPoints());
+			System.out.printf("MISSING %.2f%n POINTS", student.missingPoints());
 		} else {
 			System.out.println("PASS");
 		}
 
-		scan.close();
 	}
 
 }

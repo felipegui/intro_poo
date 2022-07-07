@@ -21,15 +21,7 @@ public class Program {
 		student.grade3 = scan.nextDouble();
 		
 		System.out.printf("FINAL GRADE = %.2f%n", student.finalGrade());
-		
-		if (student.finalGrade() < 60) {
-			System.out.println("FAILED");
-			System.out.printf("MISSING %.2f POINTS", student.missingPoints());
-		} else {
-			System.out.println("PASS");
-		}
 
-		scan.close();
 	}
 
 }
